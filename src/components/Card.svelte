@@ -12,6 +12,6 @@
 			/>
 		</a>
 	</div>
-	<p>{movie.title}</p>
+	<p class="font-semibold">{movie.title}</p>
 	<p class="text-slate-500">{movie.release_date}</p>
 </section>
