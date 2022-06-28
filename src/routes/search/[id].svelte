@@ -23,8 +23,7 @@
 	<div class="flex justify-center items-center">
 		<div class="w-10/12">
 			<Search />
-			<h3 class="font-bold py-6">Search result for</h3>
-			<div class="movie gap-x-8 gap-y-10">
+			<div class="movie mt-10 gap-x-8 gap-y-10">
 				{#each searchMovie as movie}
 					<Card {movie} />
 				{/each}

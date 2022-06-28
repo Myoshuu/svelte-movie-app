@@ -9,7 +9,8 @@
 	<div class="flex justify-center items-center">
 		<div class="w-10/12">
 			<Search />
-			<h3 class="font-bold py-6">Popular Movies</h3>
+
+			<h3 class="font-bold py-5">Popular Movies</h3>
 			<div class="movie gap-x-8 gap-y-10">
 				{#each movies as movie}
 					<Card {movie} />

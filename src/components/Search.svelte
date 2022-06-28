@@ -1,5 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { fly } from 'svelte/transition';
 
 	let search = '';
 
@@ -19,8 +20,11 @@
 	/>
 	{#if search}
 		<button
+			out:fly={{ y: 0, duration: 500 }}
+			in:fly={{ y: -10, duration: 500 }}
 			class="absolute bg-blue-600 font-bold text-white py-[3px] px-10 rounded-br-xl rounded-tr-xl"
 			>Search</button
 		>
 	{/if}
+	<p class="text-sm text-slate-500">go back to home just press "Movie App" text</p>
 </form>

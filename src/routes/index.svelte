@@ -16,13 +16,11 @@
 	// Components
 	import PopularMovies from '../components/PopularMovies.svelte';
 
+	import { fly } from 'svelte/transition';
+
 	export let movies;
 </script>
 
-<section class="mb-10">
+<section class="mb-10" in:fly={{ y: 50, duration: 500 }} out:fly={{ duration: 500 }}>
 	<PopularMovies {movies} />
-	<div class="text-center my-10">
-		<p class="text-xs">Copyright &copy; joe</p>
-		<p class="text-sm text-slate-600">TMDB | Svelte | Dev Ed</p>
-	</div>
 </section>
